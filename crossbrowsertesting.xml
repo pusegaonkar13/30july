@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="2" name="Test">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+    <class name="com.SauceDemo.TestPackage.TC01Verify_Login_Functionality"/>
+     <class name="com.SauceDemo.TestPackage.TC02Verify_Logout_Functionality"/>
+ </classes>
+  </test> <!-- Test -->     
+     
+<test thread-count="2" name="Test">
+<parameter name="browserName" value="firefox"></parameter>     
+ <classes>    
+ <class name="com.SauceDemo.TestPackage.TC03Verify_Singlebag_product_add_to_cart"/>
+  <class name="com.SauceDemo.TestPackage.TC04Verify_AllProduct_AddToCart_Functionality"/>
+    
+     
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
